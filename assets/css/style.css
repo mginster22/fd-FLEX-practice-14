@@ -1,7 +1,7 @@
 :root {
     --main-color: white;
     --hover-color: red;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .header {
@@ -40,8 +40,10 @@
 
 }
 
+
 .menu-list-item {
     display: inline-block;
+    position: relative;
 
 }
 
@@ -53,8 +55,34 @@
     display: block;
     position: relative;
     padding: 0.5em;
-
+    text-align: start;
 }
+
+
+.sub-menu-list {
+    display: none;
+    position: absolute;
+    font-size: 17px;
+  
+}
+
+.sub-list-item + .sub-list-item{
+    display: block;
+    padding: 0;
+    /* margin-top: 10px; */
+}
+.sub-menu-list .sub-menu-list{
+    display: none;
+    width: 100%;
+    position: absolute;
+    left:100%;
+    top: 0;
+}
+
+.menu-list-item:hover>.sub-menu-list {
+    display: block;
+}
+
 
 .menu-link:hover {
     color: var(--hover-color);
@@ -71,9 +99,6 @@
     right: 0;
     bottom: 1px;
     background-color: var(--hover-color);
-
-   
-
 }
 
 .menu-link:hover::after {
