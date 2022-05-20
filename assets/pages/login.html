@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REGISTRATION</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="./../css/reset.css">
+    <link rel="stylesheet" href="./../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Smokum&display=swap" rel="stylesheet">
@@ -21,56 +21,56 @@
             <nav class="nav-menu">
                 <ul class="nav-menu-list ">
                     <li class="menu-list-item ">
-                        <a class="menu-link  " href="">Home</a>
+                        <a class="menu-link  link-hover-after" href="">Home</a>
                         <ul class="sub-menu-list">
                             <li class="menu-list-item sub-list-item ">
-                                <a class="menu-link" href="">Coffe</a>
+                                <a class="menu-link link-hover-after" href="">Coffe</a>
                             </li>
                             <li class="menu-list-item sub-list-item ">
-                                <a class="menu-link" href="">City</a>
+                                <a class="menu-link link-hover-after" href="">City</a>
                             </li>
                             <li class="menu-list-item sub-list-item ">
-                                <a class="menu-link" href="">About</a>
+                                <a class="menu-link link-hover-after" href="">About</a>
                             </li>
                         </ul>
                     </li>
                     <li class="menu-list-item">
-                        <a class="menu-link " href="">About</a>
+                        <a class="menu-link link-hover-after" href="">About</a>
                     </li>
                     <li class="menu-list-item">
-                        <a class="menu-link " href="">Services</a>
+                        <a class="menu-link link-hover-after" href="">Services</a>
                     </li>
                     <li class="menu-list-item">
-                        <a class="menu-link " href="">Menu</a>
+                        <a class="menu-link link-hover-after" href="../../index.html">Menu</a>
                         <ul class="sub-menu-list">
                             <li class="menu-list-item sub-list-item ">
-                                <a class="menu-link" href="">Coffe</a>
+                                <a class="menu-link link-hover-after" href="">Coffe</a>
                                 <ul class="sub-menu-list">
                                     <li class="menu-list-item sub-list-item ">
-                                        <a class="menu-link" href="">Coffe</a>
+                                        <a class="menu-link link-hover-after" href="">Coffe</a>
                                     </li>
                                     <li class="menu-list-item sub-list-item ">
-                                        <a class="menu-link" href="">City</a>
+                                        <a class="menu-link link-hover-after" href="">City</a>
                                     </li>
                                     <li class="menu-list-item sub-list-item ">
-                                        <a class="menu-link" href="">About</a>
+                                        <a class="menu-link link-hover-after" href="">About</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="menu-list-item sub-list-item ">
-                                <a class="menu-link" href="">City</a>
+                                <a class="menu-link link-hover-after" href="">City</a>
                             </li>
                             <li class="menu-list-item sub-list-item ">
-                                <a class="menu-link" href="">About</a>
+                                <a class="menu-link link-hover-after" href="">About</a>
                                 <ul class="sub-menu-list">
                                     <li class="menu-list-item sub-list-item ">
-                                        <a class="menu-link" href="">Coffe</a>
+                                        <a class="menu-link link-hover-after" href="">Coffe</a>
                                     </li>
                                     <li class="menu-list-item sub-list-item ">
-                                        <a class="menu-link" href="">City</a>
+                                        <a class="menu-link link-hover-after" href="">City</a>
                                     </li>
                                     <li class="menu-list-item sub-list-item ">
-                                        <a class="menu-link" href="">About</a>
+                                        <a class="menu-link link-hover-after" href="">About</a>
                                     </li>
                                 </ul>
                             </li>
@@ -78,8 +78,35 @@
                     </li>
                 </ul>
             </nav>
+
             <button class="btn oneline">Contact</button>
         </section>
+        <section class="section-form">
+            <form class="form" action="./../../index.html" method="POST" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Авторизация:</legend>
+                    <label class="label1" for="username">
+                        <span class="login">Логин:</span>
+                        <input type="text" placeholder="usename" id="username">
+                    </label>
+                    <label for="password">
+                        <span class="password">Пароль<span>(Забыли?):</span></span>
+                        <input type="text" placeholder="pass" id="password">
+                    </label>
+                    <label class="checkbox1" for="">
+                        <input type="checkbox" value="pc">
+                        <span class="checkbox">Чужой компьютер</span>
+                    </label>
+
+                </fieldset>
+                <fieldset> 
+                    <input type="submit" value="Войти">
+                    <input type="submit" value="Выйти">
+                </fieldset>
+
+            </form>
+        </section>
+
     </header>
 </body>
 
